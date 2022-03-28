@@ -1,0 +1,124 @@
+
+.login {
+  width: 30%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 10px;
+  height: auto;
+  background-color: white;
+
+}
+.login h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin : 0rem 2rem 1rem 2rem;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.formControl label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.formControl input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+    height: 2rem;
+}
+
+.error {
+    color: #ca3e51;
+    text-align: center;
+}
+.invalid label {
+    color: #ca3e51;
+}
+
+.invalid input {
+    border-color: #aa0b20;
+    background-color: #ffeff1;
+}
+
+.invalid span {
+    color: #ca3e51;
+    font-size: 0.8rem;
+    margin: 0;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+} 
+
+.btn {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #4d1601;
+    color: white;
+    padding: 0.75rem 3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+.btn:hover {
+    background-color: #381608;
+}
+
+.register {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.separator {
+    padding : 0rem 0.5rem;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (min-width: 576px) and (max-width:1200px) {
+    .login {
+        width: 50%;
+        left: 25%;
+        right: 25%;
+    }
+}
+
+@media (max-width:576px) {
+    .login {
+        width : 90%;
+        left : 5%;
+        right: 5%;
+    }
+}
